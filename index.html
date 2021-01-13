@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <script type="text/javascript">
+          function startQuiz() {
+            let timerLocation = document.getElementById('timer');
+            let firstQuestionLocation = document.getElementById('timer');
+            let timer = document.createElement('h1');
+            let firstQuestion = document.createElement('h1');
+            timer.textContent = 'Timer';
+            firstQuestion.innerHTML = 'What is my middle name';
+            timerLocation.appendChild(timer);
+            firstQuestionLocation.appendChild(firstQuestion);
+
+            document.getElementById('start-button').remove();
+          }
+        </script>
+    </head>
+    <body>
+        <div>
+            <button id="start-button" onclick="startQuiz()">START</button>
+        </div>
+        <div id="timer"></div>
+        <div id="question1">
+        </div>
+    </body>
+</html>
